@@ -13,11 +13,11 @@ contract TestLibrary {
         return IntExtended.decrement(_base);
     }
 
-    function testIncrementByValue(_base, _value) returns (uint) {
+    function testIncrementByValue(uint _base, uint _value) returns (uint) {
         return _base.incrementByValue(_value);
     }
 
-    function testDecrementByValue(_base, _value) returns (uint) {
+    function testDecrementByValue(uint _base, uint _value) returns (uint) {
         return IntExtended.decrementByValue(_self, _value);
     }
 }
